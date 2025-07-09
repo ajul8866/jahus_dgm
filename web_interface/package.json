@@ -1,0 +1,39 @@
+{
+  "name": "dgm-advanced-interface",
+  "version": "1.0.0",
+  "description": "Advanced Web Interface for Darwin-Gödel Machine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"node server.js\" \"npm run watch\"",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^9.0.0",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "concurrently": "^8.2.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
